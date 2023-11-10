@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    padding:60px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: sans-serif;
+    
+}
+
+.conteneur-one{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+}
+
+.element-one{
+    width: 400px;
+    
+}
+.element-one h1{
+    color: #4b1537;
+    margin-bottom: 20px;
+}
+.element-one p{
+    color: #6c3758;
+    line-height: 25px;
+}
+
+.element-two{
+    padding-top: 20px;
+}
+.element-two .violet-opaque{
+    width:85%;
+    padding: 10px 0px 10px 50px;
+    background: rgba(76, 21, 56,.1);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    
+}
+
+i:last-child{
+    margin-right: 15px;
+}
+
+.opaque2{
+    margin-left: 30px;
+}
+.opaque3{
+    margin-left: 60px;
+}
+
+.conteneur-two{
+    width:100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    
+}
+
+.element-three{
+    width:100%;
+    padding: 20px;
+    background: #4b1537;
+    color: white;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+.three2{
+    position: relative;
+    top: 20px;
+}
+.three3{
+    position: relative;
+    top: 30px;
+}
+
+.element-three header{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    margin-right: 20px;
+}
+
+.right p:first-child{
+    font-weight: bold;
+}
+
+.rouge-bordeau{
+    color: #cd6889;
+}
+
+
+@media screen and (max-width:1000px){
+    body{
+        padding: 50px;
+    }
+    .conteneur-one{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin:0 0 50px 0;
+
+    }
+    .element-one{
+        width: 100%;
+        text-align: center;
+    }
+    .opaque2{
+        margin-left: 0;
+    }
+    .opaque3{
+        margin-left: 0;
+    }
+    .element-two{
+        text-align: center;
+        margin: 0;
+    }
+    .element-two .violet-opaque{
+        width:100%;
+        padding: 10px;
+        
+    }
+    .three2{
+        position:static;
+        top: 0;
+    }
+    .three3{
+        position: static;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .element-two{
+        margin: 0;
+    }
+    .element-one{
+        width:100%;
+        
+    }
+    
+    .conteneur-two{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .element-three{
+        width:100%;
+    }
+}
