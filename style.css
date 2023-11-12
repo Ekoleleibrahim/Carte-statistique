@@ -37,14 +37,16 @@ body{
     padding-top: 20px;
 }
 .element-two .violet-opaque{
-    width:85%;
-    padding: 10px 0px 10px 50px;
+    width:80%;
+    padding: 10px 0px 10px 20px;
     background: rgba(76, 21, 56,.1);
     margin-bottom: 10px;
     border-radius: 3px;
     
 }
-
+i{
+    margin-right: 5px;
+}
 i:last-child{
     margin-right: 15px;
 }
@@ -58,7 +60,7 @@ i:last-child{
 
 .conteneur-two{
     width:100%;
-    padding: 50px;
+    padding-top:50px ;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -67,6 +69,7 @@ i:last-child{
 
 .element-three{
     width:100%;
+    height: auto;
     padding: 20px;
     background: #4b1537;
     color: white;
